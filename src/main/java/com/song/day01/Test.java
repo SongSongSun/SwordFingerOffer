@@ -1,5 +1,7 @@
 package com.song.day01;
 
+import java.util.Stack;
+
 /**
  * @Description TODO
  * @Author Song
@@ -8,14 +10,9 @@ package com.song.day01;
  */
 public class Test {
     public static void main(String[] args) {
-        MinStack minStack = new MinStack();
-        minStack.push(-2);
-        minStack.push(0);
-        System.out.println(minStack.min());
-        minStack.push(-3);
-        System.out.println(minStack.min());
-        minStack.pop();
-        System.out.println(minStack.top());
-        System.out.println(minStack.min());
+        Stack<Integer> stack = new Stack<>();
+        stack.push(-2);
+        stack.pop();
+        System.out.println(stack.peek());
     }
 }
